@@ -1,0 +1,9 @@
+services:
+  syncserver:
+    image: eclipse-temurin:17
+    ports:
+      - 3926:3926
+  nginx:
+    image: 1.25-alpine
+    ports:
+      - 3925:443
